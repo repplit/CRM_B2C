@@ -1,0 +1,169 @@
+.sidebar__head {
+  height: 175px;
+}
+
+.sidebar__body {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.sidebar__menu {
+  padding-bottom: 150px;
+}
+
+.sidebar__menu .sidebar__item {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+}
+
+.sidebar__menu .sidebar__item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar__menu .sidebar__item:hover .sidebar__link {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(152, 152, 152, 0.3)), to(transparent));
+  background: linear-gradient(90deg, rgba(152, 152, 152, 0.3), transparent);
+}
+
+.sidebar__menu .sidebar__item.active {
+  position: relative;
+  overflow: visible;
+}
+
+.sidebar__menu .sidebar__item.active .sidebar__link {
+  position: relative;
+  height: 58px;
+  width: 240px;
+  top: 0px;
+  background: linear-gradient(45deg, #F9F9F9, #D6D6D6);
+  -webkit-box-shadow: 1px 1px 5px black;
+          box-shadow: 1px 1px 5px black;
+}
+
+.sidebar__menu .sidebar__item.active .sidebar__link .link--icon {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+.sidebar__menu .sidebar__item.active .sidebar__link .link--title {
+  color: #3c3c3c;
+}
+
+.sidebar__menu .sidebar__item.active .sidebar__link .dropdown--icon {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar__menu .sidebar__item .sidebar__link {
+  position: relative;
+  height: 55px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px 0 20px;
+}
+
+.sidebar__menu .sidebar__item .sidebar__link .link--icon {
+  margin-right: 10px;
+  opacity: 0.8;
+}
+
+.sidebar__menu .sidebar__item .sidebar__link .link--title {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.sidebar__menu .sidebar__item .sidebar__link .dropdown--icon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+  position: absolute;
+  right: 15px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar__menu .sidebar__item .sidebar__link .link__badge {
+  position: relative;
+  left: 15px;
+  bottom: 8px;
+  background: #A4DEE9;
+  border: 1px solid #2B353E;
+  border-radius: 50px;
+  padding: 3px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sidebar__menu .sidebar__item .sidebar__link .link__badge .badge--vlaue {
+  color: #2B353E;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.sidebar__menu .sidebar__item .dropdown__menu {
+  list-style: none;
+}
+
+.sidebar__menu .sidebar__item .dropdown__menu .dropdown__item {
+  height: 0;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.sidebar__menu .sidebar__item .dropdown__menu .dropdown__item .dropdown__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  padding: 0 0 0 15px;
+  margin: 3px 0;
+}
+
+.sidebar__menu .sidebar__item.dropdown.show {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.sidebar__menu .sidebar__item.dropdown.show .sidebar__link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar__menu .sidebar__item.dropdown.show .sidebar__link .dropdown--icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar__menu .sidebar__item.dropdown.show .dropdown__menu .dropdown__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 1;
+}
+
+.sidebar__menu .sidebar__item.dropdown.show .dropdown__menu .dropdown__item:hover {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(152, 152, 152, 0.3)), to(transparent));
+  background: linear-gradient(90deg, rgba(152, 152, 152, 0.3), transparent);
+}
+/*# sourceMappingURL=sidebar.css.map */
