@@ -14,14 +14,62 @@ a {
   text-decoration: none;
 }
 
-.sidebar {
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: green;
+  z-index: 100;
+  margin-top: 70px;
+}
+
+.navbar {
   position: absolute;
+  top: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  height: 70px;
+  background: url(img/sidebar/navbar-bg.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar {
+  position: relative;
   left: 0;
   top: 0;
   width: 230px;
   background: url(img/sidebar/sidebar-bg.png);
-  height: inherit;
-  background-position: center;
+  background-position: center bottom;
+  min-height: 100%;
+  z-index: 999;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar .sidebar__head {
@@ -43,6 +91,8 @@ a {
 }
 
 .sidebar .sidebar__body .sidebar__menu .sidebar__item {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
@@ -56,16 +106,17 @@ a {
 }
 
 .sidebar .sidebar__body .sidebar__menu .sidebar__item.active {
-  height: 55px;
   position: relative;
   overflow: visible;
 }
 
 .sidebar .sidebar__body .sidebar__menu .sidebar__item.active .sidebar__link {
-  position: absolute;
-  height: 61px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  position: relative;
+  height: 58px;
   width: 240px;
-  top: -4px;
+  top: 0px;
   background: linear-gradient(45deg, #F9F9F9, #D6D6D6);
   -webkit-box-shadow: 1px 1px 5px black;
           box-shadow: 1px 1px 5px black;
@@ -80,7 +131,13 @@ a {
   color: #3c3c3c;
 }
 
+.sidebar .sidebar__body .sidebar__menu .sidebar__item.active .sidebar__link .dropdown--icon {
+  color: rgba(0, 0, 0, 0.6);
+}
+
 .sidebar .sidebar__body .sidebar__menu .sidebar__item .sidebar__link {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
   position: relative;
   height: 55px;
   width: 100%;
@@ -159,7 +216,6 @@ a {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  overflow: hidden;
 }
 
 .sidebar .sidebar__body .sidebar__menu .sidebar__item.dropdown.show .sidebar__link {
@@ -191,12 +247,63 @@ a {
   background: linear-gradient(90deg, rgba(152, 152, 152, 0.3), transparent);
 }
 
-.navbar {
+.sidebar__btn {
   position: absolute;
-  top: 0;
-  left: 230px;
-  width: calc(100% - 230px);
-  height: 70px;
-  background: darkkhaki;
+  right: 19px;
+  top: 33px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.sidebar__btn.active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.sidebar__btn .btn__line {
+  width: 24px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-bottom: 7px;
+}
+
+.sidebar__version {
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.sidebar__version .version--value {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sidebar.hide {
+  width: 60px;
+  background-position: left bottom;
+}
+
+.sidebar.hide .sidebar__version {
+  opacity: 1;
+  display: none;
+}
+
+.sidebar.hide .sidebar__body .sidebar__item {
+  overflow: visible;
+}
+
+.sidebar.hide .sidebar__body .sidebar__item.active .sidebar__link {
+  width: 65px;
+}
+
+.sidebar.hide .sidebar__body .sidebar__item .sidebar__link .link--title {
+  display: none;
+}
+
+.sidebar.hide .sidebar__body .sidebar__item .sidebar__link .link__badge {
+  left: -16px;
+  bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */

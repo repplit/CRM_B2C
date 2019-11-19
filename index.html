@@ -12,207 +12,390 @@
 </head>
 
 <body>
-      <nav class="sidebar">
-            <div class="sidebar__head">
-                  <div class="sidebar__btn">
-                        <span class="btn__line lvl-1"></span>
-                        <span class="btn__line lvl-2"></span>
-                        <span class="btn__line lvl-3"></span>
+      <div class="wrapper">
+            <nav class="sidebar">
+                  <div class="sidebar__head">
+                        <div class="sidebar__version">
+                              <span class="version--value">Версия 2.17</span>
+                        </div>
+                        <div class="sidebar__btn">
+                              <span class="btn__line lvl-1"></span>
+                              <span class="btn__line lvl-2"></span>
+                              <span class="btn__line lvl-3"></span>
+                        </div>
                   </div>
-            </div>
-            <div class="sidebar__body">
-                  <div class="sidebar__menu">
+                  <div class="sidebar__body">
+                        <div class="sidebar__menu">
 
-                        <!-- Живая лента -->
-                        <div class="sidebar__item active">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/living_tape.png" alt="icon" class="link--icon">
-                                    <span class="link--title">Живая лента</span>
-                                    <div class="link__badge">
-                                          <span class="badge--vlaue">25</span>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/rejected.png" alt="icon" class="link--icon">
-                                    <span class="link--title">Забракованные</span>
-                                    <div class="link__badge">
-                                          <span class="badge--vlaue">1856</span>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
-                                    <span class="link--title">Акции</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/customers.png" alt="icon" class="link--icon">
-                                    <span class="link--title">Клиенты</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Региональные менеджеры</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item dropdown">
-                              <a class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Пользователи</span>
-                                    <span class="dropdown--icon fa fa-chevron-left"></span>
-                              </a>
-                              <ul class="dropdown__menu">
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Список</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Добавить</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Роли</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Группы</span>
-                                          </a>
-                                    </li>
-                              </ul>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Статистика</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item dropdown">
-                              <a class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Телефония</span>
-                                    <span class="dropdown--icon fa fa-chevron-left"></span>
-                              </a>
-                              <ul class="dropdown__menu">
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Статистика</span>
-                                          </a>
-                                    </li>
-                              </ul>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Сценарий разговора с клиентом</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">План на месяц</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Отчеты по дням</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Органайзер</span>
-                                    <div class="link__badge">
-                                          <span class="badge--vlaue">25</span>
-                                    </div>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Ежедневный отчет</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item">
-                              <a href="#" class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Дашборды</span>
-                              </a>
-                        </div>
-                        <div class="sidebar__item dropdown">
-                              <a class="sidebar__link">
-                                    <img src="img/sidebar/icon/stocks.png"  alt="icon" class="link--icon">
-                                    <span class="link--title">Настройки</span>
-                                    <span class="dropdown--icon fa fa-chevron-left"></span>
-                              </a>
-                              <ul class="dropdown__menu">
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Регионы</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Точки продаж</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Ценовая категория</span>
-                                          </a>
-                                    </li>
-                                    <li class="dropdown__item">
-                                          <a href="#" class="dropdown__link">
-                                                <span class="dropdown__link">Квалицикация клиентов</span>
-                                          </a>
-                                    </li>
-                              </ul>
+                              <!-- Живая лента -->
+                              <div class="sidebar__item active">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/living_tape.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Живая лента</span>
+                                          <div class="link__badge">
+                                                <span class="badge--vlaue">25</span>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/rejected.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Забракованные</span>
+                                          <div class="link__badge">
+                                                <span class="badge--vlaue">1856</span>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Акции</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/customers.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Клиенты</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Региональные менеджеры</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item dropdown active">
+                                    <a class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Пользователи</span>
+                                          <span class="dropdown--icon fa fa-chevron-left"></span>
+                                    </a>
+                                    <ul class="dropdown__menu">
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Список</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Добавить</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Роли</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Группы</span>
+                                                </a>
+                                          </li>
+                                    </ul>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Статистика</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item dropdown">
+                                    <a class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Телефония</span>
+                                          <span class="dropdown--icon fa fa-chevron-left"></span>
+                                    </a>
+                                    <ul class="dropdown__menu">
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Статистика</span>
+                                                </a>
+                                          </li>
+                                    </ul>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Сценарий разговора с клиентом</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">План на месяц</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Отчеты по дням</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Органайзер</span>
+                                          <div class="link__badge">
+                                                <span class="badge--vlaue">25</span>
+                                          </div>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Ежедневный отчет</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item">
+                                    <a href="#" class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Дашборды</span>
+                                    </a>
+                              </div>
+                              <div class="sidebar__item dropdown">
+                                    <a class="sidebar__link">
+                                          <img src="img/sidebar/icon/stocks.png" alt="icon" class="link--icon">
+                                          <span class="link--title">Настройки</span>
+                                          <span class="dropdown--icon fa fa-chevron-left"></span>
+                                    </a>
+                                    <ul class="dropdown__menu">
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Регионы</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Точки продаж</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Ценовая категория</span>
+                                                </a>
+                                          </li>
+                                          <li class="dropdown__item">
+                                                <a href="#" class="dropdown__link">
+                                                      <span class="dropdown__link">Квалицикация клиентов</span>
+                                                </a>
+                                          </li>
+                                    </ul>
+                              </div>
                         </div>
                   </div>
-            </div>
-      </nav>
-      <header class="navbar">
-            <div class="navbar__logo">
-                  <img src="#" alt="logo" class="logo">
-            </div>
-            <div class="navbar__search">
-                  <div class="search__logo">
-                        <img src="#" alt="seach" class="seach--icon">
+            </nav>
+            <header class="navbar">
+                  <div class="navbar__logo">
+                        <img src="img/sidebar/logo.svg" alt="logo" class="logo">
                   </div>
-                  <input type="text" class="search__input" placeholder="Поиск клиента">
-            </div>
-            <div class="navbar__user-menu">
-                  <div class="user-menu__icon">
-                        <span class="fa fa-icon"></span>
+                  <div class="navbar__search">
+                        <div class="search__logo">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <input type="text" class="search__input" placeholder="Поиск клиента">
                   </div>
-                  <div class="user-menu__name-area">
-                        <span class="user--name"></span>
+                  <div class="navbar__user-menu">
+                        <div class="user-menu__icon">
+                              <span class="dropdown--icon fa fa-chevron-left"></span>
+                        </div>
+                        <div class="user-menu__name-area">
+                              <span class="user--name"></span>
+                        </div>
+                        <div class="user-menu__avatar">
+                              <img src="img/sidebar/avatar-default-min.png" alt="avatar" class="user--avatar">
+                        </div>
                   </div>
-                  <div class="user-menu__avatar">
-                        <img src="#" alt="avatar" class="user--avatar">
-                  </div>
-            </div>
-      </header>
-      <main></main>
+            </header>
+            <main class="main">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, q uis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex ea commodo con sequat. Duis aute irure dolor in reprehenderit in voluptate veli t esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.</p>
 
+            </main>
+
+      </div>
       <script>
             let a = document.querySelectorAll('.dropdown .sidebar__link');
-            
-            [].forEach.call(a, function(el){
+
+            [].forEach.call(a, function (el) {
                   el.addEventListener('click', function (e) {
                         this.parentNode.classList.toggle('show');
                   })
             });
 
+            let b = document.querySelector('.sidebar__btn');
+
+            b.addEventListener('click', () => {
+                  document.querySelector('.sidebar__btn').classList.toggle('active');
+                  document.querySelector('.sidebar').classList.toggle('hide');
+            })
       </script>
 </body>
 
